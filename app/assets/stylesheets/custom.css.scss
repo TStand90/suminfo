@@ -1,0 +1,33 @@
+@import "bootstrap";
+
+body{
+background: white;
+}
+
+.content{
+	margin-top: 40px;
+}
+/* Navigation Style */
+
+.contents-sidebar{
+	margin-top: 20px;
+}
+
+#nav-item{
+	color: black;
+	text-align: right;
+	line-height: 60px;
+	font-size: 140%;
+	font-weight: bold;
+
+}
+.menu-link{
+	color: black;
+	&:hover{
+	color: #FF8533;
+	}
+}
+
+.brand  {
+
+}
