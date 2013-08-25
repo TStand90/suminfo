@@ -5,28 +5,34 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  
 </head>
 <body>
 
-<div class="container-fluid">
-  <div class="row-fluid">
-    <div class="span3 contents-sidebar">
-    	
-    		<div class="brand"><%= link_to image_tag("logo.jpg", alt: "Rails"), root_path %> 
-    		</div>
-    	
-    	<ul class="nav nav-list">
-  			<li id="nav-item"><%= link_to "About", root_path, class:"menu-link"%></li>
-  			<li id="nav-item"><%= link_to "Portfolio", portfolio_path, class:"menu-link"%></li>
-  			<li id="nav-item"><%= link_to "Contact", contact_path, class:"menu-link"%></li>
-		</ul>
-    </div>
+<%= render 'layouts/header' %>
+
+
     <div class="span9 content">
       <%= yield %>
     </div>
   </div>
 </div>
+<!--adds active class on navbar-->
 
 
+<script>
+$('.navbar-toggle').on('click', function(e){
+            $('.glyphicon').toggleClass('glyphicon-chevron-left , glyphicon-chevron-down', 200);
+});
+</script>
+
+<script>
+  $(document).ready(function () {
+        $('ul.nav > li').click(function (e) {
+            $('ul.nav > li').removeClass('active');
+            $(this).addClass('active');                
+        });            
+    });
+  </script>
 </body>
 </html>

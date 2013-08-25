@@ -1,17 +1,15 @@
-@import "bootstrap";
+@import "twitter/bootstrap";
 
 body{
 background: white;
+padding-top: 70px;
 }
 
 .content{
-	margin-top: 40px;
+
 }
 /* Navigation Style */
 
-.contents-sidebar{
-	margin-top: 20px;
-}
 
 #nav-item{
 	color: black;
@@ -29,5 +27,21 @@ background: white;
 }
 
 .brand  {
-
+	
 }
+
+.navbar-toggle  {
+	-webkit-transform: rotate(deg)
+}
+
+/*
+.collapse-button  {
+	position: relative	
+}
+
+.navbar-toggle  {
+	position: absolute;
+	bottom: 0; 
+	right: 0;
+}
+*/
