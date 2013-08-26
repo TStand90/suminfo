@@ -9,19 +9,23 @@ padding-top: 70px;
 
 }
 /* Navigation Style */
-#nav-item{
-	color: black;
-	text-align: right;
-	line-height: 60px;
-	font-size: 140%;
-	font-weight: bold;
 
+.navbar  {
+	background-color: #292929
 }
-.menu-link{
-	color: black;
+.nav-link{
+		color: white;
 	&:hover{
-	color: #FF8533;
+	color: #292929;
 	}
+}
+
+.navbar-toggle  {
+	padding: 4px 10px;
+	margin-top: 12.5px;
+	margin-bottom: 12.5px;
+	border-radius: 3px;
+	background-color:grey;
 }
 
 .brand  {
@@ -30,6 +34,25 @@ padding-top: 70px;
 
 .navbar-nav  {
 	margin: 7.5px -15px;
+}
+
+
+a.nav-link {
+  color: grey;
+	&:hover  {
+	  color: white;
+		background-color: #292929 !important;
+	}
+	&:active {
+		background-color: #292929;
+	}
+	&:focus  {
+		background-color: #292929 !important;
+	}
+}
+
+.navbar-nav > .active > a  {
+	color: white;
 }
 
 /*
